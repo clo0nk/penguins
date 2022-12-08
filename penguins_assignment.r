@@ -38,7 +38,7 @@ write.csv(penguins_clean, filename)
 penguins_mass <- mass_data_cleaning(penguins_clean)
 
 #Save this data we will use for analysis
-filename = paste("data_clean/", date, "_penguins_mass.csv",sep="") # e.g. "data_clean/2022-12-08_penguins_mass.csv"
+filename = paste("data_clean/", date, "_penguins_mass.csv",sep="")
 write.csv(penguins_mass, filename)
 
 
