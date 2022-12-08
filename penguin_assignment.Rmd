@@ -47,7 +47,6 @@ write.csv(penguins_mass, filename)
 ```
 
 
-
 #Statistical analysis
 ```{r}
 #I want to investigate the effect of sex on body mass, also taking into account penguin species.
