@@ -20,7 +20,7 @@ source("functions/plotting.r")
 
 #Load the data:
 
-penguins_raw <- read.csv("raw_data/penguins_raw.csv")
+penguins_raw <- read.csv("data_raw/penguins_raw.csv")
 
 
 #Clean the data:
@@ -31,14 +31,14 @@ penguins_clean <- cleaning(penguins_raw)
 
 # Save the clean data with current date in the title
 date = Sys.Date() 
-filename = paste("clean_data/", date, "_penguins_clean.csv",sep="") # e.g. "clean_data/2022-12-08_penguins_clean.csv"
+filename = paste("data_clean/", date, "_penguins_clean.csv",sep="") # e.g. "data_clean/2022-12-08_penguins_clean.csv"
 write.csv(penguins_clean, filename)
 
 #Subset the data to only include penguins that are not NA for body mass and sex, and reformat wording
 penguins_mass <- mass_data_cleaning(penguins_clean)
 
 #Save this data we will use for analysis
-filename = paste("clean_data/", date, "_penguins_mass.csv",sep="") # e.g. "clean_data/2022-12-08_penguins_mass.csv"
+filename = paste("data_clean/", date, "_penguins_mass.csv",sep="") # e.g. "data_clean/2022-12-08_penguins_mass.csv"
 write.csv(penguins_mass, filename)
 
 
