@@ -7,7 +7,7 @@
 #Initial Setup:
 
 #Set the working directory - where R will look for files and folders
-setwd("C:\Users\Chloe Dick\OneDrive - Nexus365\R\ReproducableAssessment")
+setwd("C:/Users/Chloe Dick/OneDrive - Nexus365/R/ReproducableAssessment")
 
 #Load the libraries from the libraries function from my file
 source("functions/libraries.r")
