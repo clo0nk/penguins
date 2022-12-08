@@ -49,7 +49,7 @@ write.csv(penguins_mass, filename)
 
 #Statistical analysis
 ```{r}
-#I want to investigate the effect of sex on body mass, also taking into account penguin species.
+#I want to test for the effect of sex, species, and the interaction between the two on the body mass of three species of penguin.
 #Building a linear model
 model1 <- lm(body_mass_g ~ sex*species, penguins_mass)
 
@@ -64,7 +64,7 @@ summary(model1)
 
 #Plotting a figure to explain this test:
 ```{r}
-#Plot the body mass by sex, taking into account species
+#Plot the body mass by sex and species
 mass_barchart <- plot_mass_figure(penguins_mass)
 mass_barchart
 ```
