@@ -10,8 +10,8 @@ knitr::opts_chunk$set(echo = TRUE, error = FALSE, message=FALSE)
 
 #Initial Setup:
 ```{r}
-#Set the working directory - where R will look for files and folders - must modify for your own computer
-#setwd("C:/Users/Chloe Dick/OneDrive - Nexus365/R/ReproducableAssessment")
+#Set the working directory - where R will look for files and folders
+#setwd(set own working directory personal to your machine) - root directory should be "penguins-main"
 
 #Load the libraries from the libraries function from my file
 source("functions/libraries.r")
