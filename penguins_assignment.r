@@ -66,3 +66,4 @@ save_mass_barchart_png(penguins_mass, "figures/fig01_poster.png",
 #Save the figure as a vector, for screen viewing
 save_mass_barchart_svg(penguins_mass, "figures/fig01_vector.svg",
                       size=15, scaling=1)
+                      
