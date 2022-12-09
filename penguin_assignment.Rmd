@@ -8,7 +8,7 @@ date: "2022-12-08"
 knitr::opts_chunk$set(echo = TRUE, error = FALSE, message=FALSE)
 ```
 
-# Initial Setup:
+## Initial Setup:
 ```{r}
 #Set the working directory - where R will look for files and folders
 #setwd(set own working directory personal to your machine) - root directory should be "penguins-main"
@@ -24,7 +24,7 @@ source("functions/plotting.r")
 penguins_raw <- read.csv("data_raw/penguins_raw.csv")
 ```
 
-# Clean the data:
+## Clean the data:
 ```{r}
 #Fix column names, remove empty rows, remove columns beginning with delta and comments
 penguins_clean <- cleaning(penguins_raw)
@@ -47,7 +47,7 @@ write.csv(penguins_mass, filename)
 ```
 
 
-# Statistical analysis
+## Statistical analysis
 ```{r}
 #I want to test for the effect of sex, species, and the interaction between the two on the body mass of three species of penguin.
 #Building a linear model
@@ -62,7 +62,7 @@ summary(model1)
 ```
 
 
-# Plotting a figure to explain this test:
+## Plotting a figure to explain this test:
 ```{r}
 #Plot the body mass by sex and species
 mass_barchart <- plot_mass_figure(penguins_mass)
